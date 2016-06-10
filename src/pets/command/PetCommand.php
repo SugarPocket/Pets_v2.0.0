@@ -69,47 +69,47 @@ class PetCommand extends PluginCommand {
 						break;
 						case "rabbit":
 							$this->main->changePet($sender, "RabbitPet");
-							$sender->sendMessage("§aYour pet has changed to Rabbit!");
+							$sender->sendMessage("§aสัตว์เลี้ยงของคุณได้เปลี่ยนเป็น กระต่าย");
 							return true;
 						break;
 						case "cat":
 							$this->main->changePet($sender, "OcelotPet");
-							$sender->sendMessage("§aYour pet has changed to Cat!");
+							$sender->sendMessage("§aสัตว์เลี้ยงของคุณได้เปลี่ยน เป็น แมว");
 							return true;
 						break;
 						case "chicken":
 							$this->main->changePet($sender, "ChickenPet");
-							$sender->sendMessage("§aYour pet has changed to Chicken!");
+							$sender->sendMessage("§aสัตว์เลี้ยงของคุณได้เปลี่ยน เป็น ไก่");
 							return true;
 						break;
 						case "zombie":
-							$this->main->changePet($sender, "ChickenPet");
-							$sender->sendMessage("§aYour pet has changed to Chicken!");
+							$this->main->changePet($sender, "(ZombiePet");
+							$sender->sendMessage("§aสัตว์เลี้ยงของคุณได้เปลี่ยน เป็น ซอมบี้!");
 							return true;
 						break;
 						case "spider":
 							$this->main->changePet($sender, "SpiderPet");
-							$sender->sendMessage("§aYour pet has changed to Spider!");
+							$sender->sendMessage("§aสัตว์เลี้ยงของคุณได้เปลี่ยน เป็น แมงมุม!");
 							return true;
 						break;
 						case "snowgolem":
 							$this->main->changePet($sender, "SnowGolemPet");
-							$sender->sendMessage("§aYour pet has changed to SnowGolem!");
+							$sender->sendMessage("§aสัตว์เลี้ยงของคุณได้เปลี่ยน เป็น สโนโกเล็ม!");
 							return true;
 						break;
 						case "irongolem":
 							$this->main->changePet($sender, "IronGolemPet");
-							$sender->sendMessage("§aYour pet has changed to IronGolem!");
+							$sender->sendMessage("§aสัตว์เลี้ยงของคุณได้เปลี่ยน เป็น ไอร่อนโกเล็ม!");
 							return true;
 						break;
 						case "bat":
 							$this->main->changePet($sender, "BatPet");
-							$sender->sendMessage("§aYour pet has changed to Bat!");
+							$sender->sendMessage("§aสัตว์เลี้ยงของคุณได้เปลี่ยน เป็น ค้างคาว!");
 							return true;
 						break;
 						//case "Wich":
 							//$this->main->changePet($sender, "WichPet");
-							//$sender->sendMessage("Your pet has changed to Wich!");
+							//$sender->sendMessage("สัตว์เลี้ยงของคุณได้เปลี่ยน เป็น พ่อมด!");
 							//return true;
 						//break;
 					default:
