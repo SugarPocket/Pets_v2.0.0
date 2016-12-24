@@ -125,12 +125,6 @@ abstract class Pets extends Creature {
 					$this->returnToOwner();
 					return;
 				}
-			} else {
-				if (!$block->canBeFlowedInto) {
-					$this->motionY = 1.1;
-				} else {
-					$this->motionY = 0;
-				}
 			}
 		} else {
 			$block = $this->level->getBlock(new Vector3($newX, Math::floorFloat($this->y - 1), $newZ));
