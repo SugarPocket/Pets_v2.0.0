@@ -46,6 +46,8 @@ class main extends PluginBase implements Listener {
 		Entity::registerEntity(BatPet::class);
 		Entity::registerEntity(SpiderPet::class);
 		$this->getServer()->getLogger()->info(TextFormat::BLUE . "ปลักอินสัตว์เลี้ยงถูกเปิด.");
+		$this->getLogger()->info("§9 เซิฟเวอร์ที่ใช้ปลักอินนี้ sgpk.ddns.net Port 19132");
+		$this->getLogger()->info("§9 ขอสงวนสัตว์ที่มีในเซิฟ sgpk ปลักอินตัวนี้อาจมี สัตว์ไม่ครบ");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 
