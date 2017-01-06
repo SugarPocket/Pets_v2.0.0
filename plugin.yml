@@ -1,6 +1,6 @@
-name: Pets
+name: SugarPets
 author: Fix OokittisakoO
 description: Simple Pets Plugin By BalAnce + Driesboy + Lifeboat
-version: 3.0.5
+version: 4.0.0
 main: pets\main
 api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
