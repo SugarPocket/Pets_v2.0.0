@@ -14,6 +14,7 @@ use pocketmine\block\Air;
 use pocketmine\block\Liquid;
 use pocketmine\utils\TextFormat;
 use pets\main;
+use pocketmine\entity\Entity;
 
 abstract class Pets extends Creature {
 
@@ -53,6 +54,24 @@ abstract class Pets extends Creature {
 				}
 				$player->dataPacket($pk);
 				$this->hasSpawned[$player->getId()] = $player;
+				$level = $player->getLevel();
+			$pk = new AddEntityPacket();
+			$pk->type = 93;
+			$pk->eid = Entity::$entityCount++;
+				$pk->type = 93;
+        $pk->eid = Entity::$entityCount++;
+        $pk->metadata = array();
+        $pk->speedX = 0;
+        $pk->speedY = 0;
+        $pk->speedZ = 0;
+        $pk->yaw = $this->getYaw();
+        $pk->pitch = $this->getPitch();
+        $pk->x = $this->x;
+        $pk->y = $this->y;
+        $pk->z = $this->z;
+        foreach($level->getPlayers() as $$player){
+            $$player->dataPacket($pk);
+        }
 			}
 		}
 	}
