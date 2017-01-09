@@ -3,4 +3,4 @@ author: Fix OokittisakoO
 description: Simple Pets Plugin By BalAnce + Driesboy + Lifeboat
 version: 4.0.0
 main: pets\main
-api: [1.0.0, 2.0.0, 3.0.0-ALPHA1]
+api: [1.0.0, 2.0.0, 3.0.0-ALPHA1, 3.0.0-ALPHA2]
