@@ -4,6 +4,7 @@ namespace pets;
 
 use pocketmine\level\Location;
 use pocketmine\level\Position;
+use pocketmine\level\Level;
 use pocketmine\nbt\tag\DoubleTag;
 use pocketmine\nbt\tag\FloatTag;
 use pocketmine\entity\Entity;
@@ -52,7 +53,7 @@ class main extends PluginBase implements Listener {
 	}
 
 	public function create($player,$type, Position $source, ...$args) {
-		$chunk = $source->getLevel()->getChunk($source->x >> 4, $source->z >> 4, true);
+		$chunk = $source->getLevel($source->x >> 4, $source->z >> 4, true);
 		$nbt = new CompoundTag("", [
 			"Pos" => new ListTag("Pos", [
 				new DoubleTag("", $source->x),
