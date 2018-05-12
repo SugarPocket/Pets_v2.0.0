@@ -6,7 +6,7 @@ use pocketmine\entity\Creature;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\Timings;
 use pocketmine\level\Level;
-use pocketmine\network\protocol\AddEntityPacket;
+use pocketmine\network\mcpe\protocol\AddEntityPacket;
 use pocketmine\Player;
 use pocketmine\math\Vector3;
 use pocketmine\math\Math;
