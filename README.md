@@ -25,5 +25,5 @@ API - 1.0.0
 - การ์เดียน
 
 ทีมงาน พัฒนา
-- SugarPocket  = sgpks.ddns.net 19132  Version 1.2.13
+- SugarPocket  = sgpk.ddns.net 19132  Version 1.4.X
 - Apvp
